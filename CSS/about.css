@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --color: #020031;
+    --button:#F6783A;
+    --font-color:#fff;
+    --paregraph: #636363;
+    --newsletter:#F7F7F7;
+    --footer-bg:#020031;
+}
+/* navbar section start */
+.menu{
+    background-color: var(--color);
+}
+#menu-none a{
+    display: none;
+}
+.right-icon{
+    position: relative;
+    bottom: 39px;
+}
+.right-icon a{
+    font-size: 20px;
+    color: var(--font-color);
+}
+.menu-list{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 22px;
+}
+
+.menu-list a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.menu a:hover{
+    cursor: pointer;
+    color: var(--button);
+}
+
+/* navbar section end */
+
+/* about-header section start */
+.about-title h2{
+    padding-top: 50px;
+    font-size: 35px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.about-info p{
+    line-height: 22px;
+    color: var(--paregraph);
+}
+.about-list li{
+    list-style-type: none;
+}
+.about-list i{
+    color: var(--button);
+}
+/* about-header section end */
+/* testimonial section start */
+.test{
+    position: relative;
+    left: 0px;
+}
+.test-main{
+    background-color: #F7F7F7;
+}
+.testimonial-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#carouselExampleIndicators{
+    /* background-color: #F7F7F7; */
+    color: black;
+}
+.test-para{
+    color: #636363;
+    line-height: 28px;
+}
+.test-para h4{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.test-para1{
+    color: var(--button);
+}
+/* testimonial section end */
+/* team section start */
+.team-section{
+    margin-top: 100px;
+}
+.team-title p{
+    color: #636363;
+}
+.team-member{
+    margin-top: 60px;
+}
+.person img{
+    position: relative;
+    left: 29px;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+}
+.person-info p{
+    color: var(--button);
+}
+/* team section end */
+/* newletter-section start */
+.news-letter{
+    height: 400px;
+    margin-top: 130px;
+    background-color: var(--newsletter);
+}
+.new-full{
+    padding-top: 10px;
+}
+.news-title p{
+    color: var(--paregraph);
+}
+.newsletter{
+    position: relative;
+    margin-top: 40px;   
+}
+.newsletter input{
+    height: 50px;
+    width: 280px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+.new-btn{
+    position: relative;
+    left: 60px;
+    height: 50px;
+    width: 160px;
+    border: none;
+    color: var(--font-color);
+    background-color: var(--button);
+    border-radius: 50px;
+}
+/* newsletter section end */
+/* footer section start */
+.footer-section{
+    height: 1100px;
+    width: 100%;
+    color: var(--font-color);
+    background-color: var(--footer-bg);
+    background-image:url('../Images/Background/footer-bg.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.footer-top{
+    padding-top: 60px;
+}
+.about-img p{
+    color: #B7B7B7;
+}
+.about-img a{
+    color: #B7B7B7;
+}
+
+.footer-nav {
+    color: #B7B7B7;
+    list-style-type: none;
+    line-height: 40px;
+}
+.footer-nav a{
+    color: #B7B7B7;
+    text-decoration: none;
+}
+.recent-post li{
+    list-style-type: none;
+}
+.recent-post p{
+    font-size: 14px;
+    color: #B7B7B7;
+    line-height: 20px;
+}
+.recent-post i{
+    font-size: 12px;
+    color: var(--button);
+}
+.contact li{
+    list-style-type: none;
+}
+.contact p{
+    color: #B7B7B7;
+    font-size: 14px;
+}
+.contact i{
+    color: var(--button);
+}
+.footer-nav a:hover{
+    color: var(--button);
+}
+.social a:hover{
+    color: var(--button);
+}
+/* footer section end */
+
+
+
+
+
+
+@media (min-width:768px) {
+    #menu-none a{
+        display: block;
+    }
+    .test-main{
+        width: 100%;
+    }
+    .testimonial-img img{
+        width: 100%;
+    }
+    .about-header{
+    margin: 0 auto;
+    width: 90%;
+    }
+    .main-testimonial{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .news-letter{
+        height: 220px;
+    }
+    .form{
+        padding-left: 0px;
+        padding-top: 100px;
+    }
+    .newsletter input{
+        font-size: 15px;
+        padding: 18px 30px;
+        border: none;
+        border-radius: 30px;
+        padding-right: 160px;
+    }
+    .new-btn{
+        position: absolute;
+        left: 150px;
+        right: 0;
+        bottom: 0px;
+        height: 100%;
+        width: 150px;
+        border: none;
+        color: var(--font-color);
+        background-color: var(--button);
+        border-radius: 0px 50px 50px 0px;
+    }
+    .footer-section{
+        height: 600px;
+    }
+    
+}
+@media (min-width:992px) {
+    .test-main{
+        margin:  0 auto;
+        width: 100%;
+}
+    .testimonial-img img{
+        height: 300px;
+        width: 100%;
+    }
+    .test-para p{
+        font-size: 22px;
+        padding-top: 20px;
+        margin-left: 35px;
+    }
+    .main-testimonial{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .newsletter input{
+        position: relative;
+        left: 180px;
+    }
+    .new-btn{
+        position: absolute;
+        left: 320px;
+        right: 0;
+        bottom: 0px;
+        height: 100%;
+        width: 150px;
+        border: none;
+        color: var(--font-color);
+        background-color: var(--button);
+        border-radius: 0px 50px 50px 0px;
+    } 
+    
+}
+@media (min-width:1400px) {
+    .form{
+        width: 100%;
+    }
+    .newsletter input{
+        position: relative;
+        left: 180px;
+        width: 600px;
+    }
+    .new-btn{
+        position: absolute;
+        left: 630px;
+        right: 0;
+        bottom: 0px;
+        height: 100%;
+        width: 150px;
+        border: none;
+        color: var(--font-color);
+        background-color: var(--button);
+        border-radius: 0px 50px 50px 0px;
+    }
+    .footer-section{
+        height: 390px;
+    }
+     
+    
+}
